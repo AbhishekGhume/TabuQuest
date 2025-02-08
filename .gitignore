@@ -21,3 +21,9 @@ env/
 
 # Data
 data/
+
+etc/
+pyvenv.cfg
+Scripts/
+Lib/
+share/
