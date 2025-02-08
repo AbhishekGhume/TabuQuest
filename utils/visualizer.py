@@ -1,34 +1,3 @@
-# import plotly.express as px
-# import pandas as pd
-
-# class Visualizer:
-#     @staticmethod
-#     def auto_visualize(data):
-#         """Automatically choose visualization based on data"""
-#         try:
-#             if isinstance(data, pd.Series):
-#                 data = data.to_frame()
-                
-#             if len(data) == 0:
-#                 return None
-                
-#             # Time series data
-#             date_cols = [col for col in data.columns if 'date' in col.lower()]
-#             if date_cols and len(data.columns) == 2:
-#                 return px.line(data, x=date_cols[0], y=data.columns[1])
-                
-#             # Categorical data
-#             if len(data.columns) == 1:
-#                 return px.bar(data, x=data.columns[0], y=data.index)
-                
-#             # Default scatter plot
-#             return px.scatter(data)
-#         except Exception as e:
-#             raise RuntimeError(f"Visualization failed: {str(e)}")
-
-
-
-
 import plotly.express as px
 import pandas as pd
 from typing import Optional

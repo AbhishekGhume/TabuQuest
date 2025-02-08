@@ -1,35 +1,3 @@
-# import pandas as pd
-
-# class QueryExecutor:
-#     def __init__(self, df):
-#         self.df = df
-#         self.allowed_namespace = {
-#             'pd': pd,
-#             'df': self.df,
-#             'sum': sum,
-#             'mean': lambda x: x.mean(),
-#             'max': lambda x: x.max(),
-#             'min': lambda x: x.min()
-#         }
-
-#     def execute(self, code):
-#         """Safely execute generated code"""
-#         try:
-#             # Restrict execution environment
-#             exec_locals = {}
-#             exec(f"result = {code}", {"__builtins__": {}}, self.allowed_namespace)
-#             result = self.allowed_namespace.get('result', pd.DataFrame())
-            
-#             if not isinstance(result, (pd.DataFrame, pd.Series)):
-#                 raise TypeError("Result must be a DataFrame or Series")
-                
-#             return result
-#         except Exception as e:
-#             raise RuntimeError(f"Execution error: {str(e)}")
-
-
-
-
 import pandas as pd
 import difflib
 import re
