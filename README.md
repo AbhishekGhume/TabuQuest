@@ -27,8 +27,8 @@
    streamlit run app.py
 
 ## Requirements
-- **Python 3.8+
-- **Streamlit
-- **Pandas
-- **Google Generative AI (Gemini API)
-- **Plotly
+- Python 3.8+
+- Streamlit
+- Pandas
+- Google Generative AI (Gemini API)
+- Plotly
