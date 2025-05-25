@@ -2,6 +2,9 @@
 
 📊 **TabuQuest** is a natural language query engine for tabular data. It allows users to ask questions in plain English and get instant insights from their datasets.
 
+## Working Video of Project
+- https://drive.google.com/file/d/1KimR9AcuGGaSujW4A_LOfIK83yQeX0go/view?usp=drive_link
+
 ## Features
 - **Natural Language Interface**: Ask questions like "Show sales in 2023".
 - **Automated Data Cleaning**: Handle missing values and inconsistencies.
