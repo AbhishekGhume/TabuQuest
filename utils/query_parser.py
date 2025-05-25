@@ -26,7 +26,7 @@ class QueryParser:
     def parse_query(self, query, columns):
         """Enhanced prompt with column awareness"""
         try:
-            model = genai.GenerativeModel('gemini-pro', safety_settings=self.safety_settings)
+            model = genai.GenerativeModel('models/gemini-1.5-flash-latest', safety_settings=self.safety_settings)
             columns_list = ", ".join([f"'{col}'" for col in columns])
             
             prompt = f"""Convert this query to pandas code. Follow strictly:
